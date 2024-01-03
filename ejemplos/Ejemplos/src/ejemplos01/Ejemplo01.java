@@ -21,7 +21,7 @@ public class Ejemplo01 {
         //System.out.printf("%s\n", miCiudad);
         obtenerMultiplicacion(7,50);
         // El primer metodo que vimos fue un procedimeinto 
-        // 
+        // que mediante el metodo no sirvio para presentar una tabla
         
     }
 
@@ -35,11 +35,11 @@ public class Ejemplo01 {
         int multiplicacion;
         String cadenaFinal = "";
         for (int i = 1; i <= limite; i++) {
-            multiplicacion = tabla * limite;
+            multiplicacion = tabla * i;
             cadenaFinal = String.format("%s%d * %d = %d\n", 
                     cadenaFinal,
                     tabla,
-                    1,
+                    i,
                     multiplicacion);
             
         }
