@@ -16,25 +16,38 @@ public class Ejemplo01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        //String miCiudad = obtenerCiudadMayuscula("Loja");
+        //System.out.printf("%s\n", miCiudad);
+        obtenerMultiplicacion(7,50);
+        // El primer metodo que vimos fue un procedimeinto 
+        // 
         
-        
-        String miCiudad = obtenerCiudadMayuscula("Loja");
-        System.out.printf("%s\n", miCiudad);
     }
-    
-    
-    public String obtenerCiudadMayuscula(String m){
+
+    public static String obtenerCiudadMayuscula(String m) {
         String m2 = m.toUpperCase();
         return m2;
     }
-    
-    public static void obtenerMultiplicacion(int tabla, int limite){
-        
+
+    public static void obtenerMultiplicacion(int tabla, int limite) {
+        // void significa que no retorna nada
+        int multiplicacion;
+        String cadenaFinal = "";
+        for (int i = 1; i <= limite; i++) {
+            multiplicacion = tabla * limite;
+            cadenaFinal = String.format("%s%d * %d = %d\n", 
+                    cadenaFinal,
+                    tabla,
+                    1,
+                    multiplicacion);
+            
+        }
+        System.out.printf("%s\n", cadenaFinal);
     }
-    
-    public static String obtenerNombre(){
+   
+    public static String obtenerNombre() {
         return "Luis";
     }
-    
-    
+
 }
